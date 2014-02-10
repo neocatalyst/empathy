@@ -1,0 +1,48 @@
+body{
+	background-image:url('199215.jpg');
+	background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    color: #26292A;
+    font-size: 4.25em;
+    font-family: 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 0.6em;
+    letter-spacing: 0.05em;
+}
+
+input {
+    font-size: 1em;
+    position: relative;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    font-variant: small-caps;
+    padding-left: 15px;
+    color: #494848;
+    border-radius: 5px;
+    border: 0px none;
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+#find{
+	font-size: 1.7em;
+font-variant: small-caps;
+height: 35px;
+background: none repeat scroll 0% 0% #26292A;
+color: #FFF;
+border-radius: 5px;
+border: 0px none;
+cursor: pointer;
+}
+
+#fb{
+	position: absolute;
+	top:100px;
+	right:50px;
+}
