@@ -1,0 +1,5 @@
+var fs = require('fs');
+data = fs.readFile('lyrics');
+log = console.log;
+
+log(data.toString());

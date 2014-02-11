@@ -1,0 +1,25 @@
+var http = require('http');
+var log = console.log;
+
+var getKeys = function(obj){
+   var keys = [];
+   for(var key in obj){
+      keys.push(key);
+   }
+   return keys;
+}
+
+http.get('http://api.soundcloud.com/users/3207.json?client_id=' + clientID, function(res) {
+  console.log("statusCode: ", res.statusCode);
+  console.log("headers: ", res.headers);
+
+  res.on('data', function(d) {
+     process.stdout.write(d);
+      //plog(d);
+  });
+
+}).on('error', function(e) {
+  console.error(e);
+}).on('end', function(e) {
+    log('done');
+});
