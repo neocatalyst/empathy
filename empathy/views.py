@@ -82,6 +82,15 @@ def search_form(request):
 
 
 def classify(request):
+	freq={'s':0,
+	'a':0,
+	'h':0,
+	'f':0,
+	'l':0,
+	'ap':0,
+	'e':0,
+	'em':0,
+	'q':0}
 	text=request.GET['qq'].lower()
 	sen=text.split(' ')
 
@@ -93,7 +102,7 @@ def classify(request):
 	x=max(freq,key=freq.get)
 	print(freq)
 	if freq[x]==0:
-		emo=alright
+		emo='alright'
 		file1=open('mix/happy')
 		str=file1.read()
 		lili=str.split(', ')
