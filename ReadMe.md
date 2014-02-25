@@ -12,3 +12,7 @@ NLP. Following command can be used to install Empathy.
 Note: This requires `pip`. Following can be used to install `pip`
 
     easy_install pip
+
+Run the server with the following command
+
+    python manage.py runserver 8080
